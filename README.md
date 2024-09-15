@@ -5,7 +5,9 @@ Welcome to my personal blog! This repository contains the code and content for m
 ## 🌐 Live Website
 You can view the live blog at:
 [https://your-username.github.io/your-repository/](https://your-username.github.io/your-repository/)
+You can view the blog by clicking the link below:
 
+[View my blog](index.html)
 ## ✨ Features
 - **Gaming Insights**: In-depth articles about popular games, including ESO, with tips, character builds, and more.
 - **Guides & Tutorials**: Step-by-step guides on different topics, from gaming strategies to tech how-tos.

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roleplaying Adventures</title>
+    <style>
+        /* Global Styling */
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #121212;
+            color: #f0f0f0;
+        }
+
+        /* Header */
+        header {
+            background-color: #1f1f1f;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            max-height: 50px;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            color: #f0f0f0;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: #ffc107;
+        }
+
+        /* Hero Section */
+        .hero {
+            background-image: url('images/images 5.jfif');
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            padding: 100px 20px;
+            color: #f0f0f0;
+            position: relative;
+        }
+        .hero h1 {
+            font-size: 48px;
+        }
+
+        .hero p {
+            font-size: 24px;
+        }
+
+        /* Latest News */
+        .latest-news, .news-articles, .about-content {
+            padding: 40px;
+            background-color: #1f1f1f;
+        }
+
+        .latest-news h2, .about-content h2 {
+            margin-bottom: 20px;
+            font-size: 32px;
+        }
+
+        article {
+            margin-bottom: 20px;
+        }
+
+        article h3 a {
+            color: #ffc107;
+            text-decoration: none;
+        }
+
+        article h3 a:hover {
+            text-decoration: underline;
+        }
+
+        article p {
+            color: #ccc;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1f1f1f;
+            text-align: center;
+            padding: 20px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        .social-links a {
+            color: #f0f0f0;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+
+        .social-links a:hover {
+            color: #ffc107;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to my ESO Blog</h1>
+        <p>This is where we go on our long journey of ESO Roleplaying Adventures.</p>
+    </header>
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="posts/posts.html">Posts</a>
+        <a href="contact/contact.html">Contact</a>
+    </nav>
+    <div class="container">
+        <div id="content"></div>
+    </div>
+    <footer>
+        <p>&copy; 2024 My ESO Blog. All rights reserved.</p>
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            let page = window.location.pathname.split('/').pop();
+            let filePath = '';
+            if (page === 'home.html' || page === '') {
+                filePath = 'home.html';
+            } else if (page === 'posts.html') {
+                filePath = 'posts/posts.html';
+            } else if (page === 'contact.html') {
+                filePath = 'contact/contact.html';
+            }
+            if (filePath) {
+                fetch(filePath)
+                    .then(response => response.text())
+                    .then(data => {
+                        document.getElementById('content').innerHTML = data;
+                    })
+                    .catch(error => console.error('Error loading content:', error));
+            }
+        });
+    </script>
+</body>
+</html>

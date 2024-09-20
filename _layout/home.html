@@ -1,0 +1,12 @@
+<!-- _layouts/home.html -->
+{% layout default %}
+<h1>Welcome to Roleplaying Adventures</h1>
+<p>Explore the world of ESO Roleplaying and more!</p>
+
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ _posts/YEAR-MONTH-DAY-title.md }}">{{ post.title }}</a>
+    </li>
+  {% endfor %}
+</ul>

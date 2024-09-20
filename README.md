@@ -13,7 +13,7 @@ title: "Welcome to Roleplaying Adventures"
     <ul>
         {% for post in site.posts %}
             <li>
-                <a href="{{ YEAR-MONTH-DAY-title.md | relative_url }}">{{ post.title }}</a>
+                <a href="{{ YEAR-MONTH-DAY-title.md | relative_url }}">{{ YEAR-MONTH-DAY-title.md }}</a>
                 <p>{{ post.excerpt }}</p>
             </li>
         {% endfor %}

@@ -2,11 +2,16 @@
 
 title: "Roleplaying Adventures"
 description: "A blog about ESO Roleplaying Adventures"
-baseurl: "" # Leave this blank if deploying to GitHub Pages on user/organization site
-url: "https://github.com/unvailedsmoke/eso.rp.blog.github.io.git" # Change this to your GitHub Pages URL
+baseurl: "/eso.rp.blog.github.io" # Set this for GitHub Pages repository
+url: "https://unvailedsmoke.github.io/eso.rp.blog.github.io" # Your GitHub Pages URL
 author: "Your Name"
 markdown: kramdown
 theme: minima
 
 # Build settings
 paginate: 5
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-paginate

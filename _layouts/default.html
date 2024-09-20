@@ -1,17 +1,24 @@
-<!-- _layouts/default.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ ESO RP Adventures }} | {{ ESO RP Adventures }}</title>
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <title>{{ page.title }} | {{ site.title }}</title>
+    <!-- Link to your custom CSS file -->
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
 <body>
+
+    <!-- Include the header partial -->
     {% include header.html %}
-    <div class="content">
+
+    <!-- Main content will be injected here -->
+    <main>
         {{ content }}
-    </div>
+    </main>
+
+    <!-- Include the footer partial -->
     {% include footer.html %}
+
 </body>
 </html>

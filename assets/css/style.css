@@ -1,22 +1,152 @@
 /* assets/css/style.css */
+
+/* Global Styles */
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     background-color: #121212;
     color: #f0f0f0;
+    line-height: 1.6;
 }
 
+a {
+    color: #ffc107;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #ff9900;
+}
+
+/* Header Styles */
 header {
     background-color: #1f1f1f;
     padding: 20px;
     text-align: center;
+    border-bottom: 2px solid #ffc107;
 }
 
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    color: #ffc107;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li a {
+    font-size: 1.2em;
+    color: #f0f0f0;
+    padding: 10px 20px;
+    border: 2px solid transparent;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    color: #121212;
+    background-color: #ffc107;
+    border-color: #ffc107;
+}
+
+/* Main Content Styles */
+.container {
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 2em;
+    border-bottom: 2px solid #ffc107;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+/* Footer Styles */
 footer {
     background-color: #1f1f1f;
-    padding: 10px;
+    padding: 20px;
     text-align: center;
+    border-top: 2px solid #ffc107;
+    color: #ccc;
     position: fixed;
     width: 100%;
     bottom: 0;
 }
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+    color: #999;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav ul li a {
+        font-size: 1em;
+        padding: 8px 16px;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+}
+
+/* Section Styles */
+.hero {
+    background-color: #333;
+    color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.latest-posts {
+    padding: 40px;
+    background-color: #1f1f1f;
+}
+
+.latest-posts ul {
+    list-style: none;
+    padding: 0;
+}
+
+.latest-posts li {
+    margin-bottom: 20px;
+}
+
+.about-section, .contact-section {
+    padding: 40px;
+    background-color: #1f1f1f;
+}
+

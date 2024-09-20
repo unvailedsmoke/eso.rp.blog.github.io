@@ -1,9 +1,0 @@
----
-layout: default
-title: Home
----
-
-<div class="hero">
-    <h1>Welcome to my ESO Blog</h1>
-    <p>This is where we go on our long journey of ESO Roleplaying Adventures.</p>
-</div>

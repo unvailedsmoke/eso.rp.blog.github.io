@@ -1,9 +1,0 @@
----
-layout: default
-title: Posts
----
-
-<div class="latest-news">
-    <h2>Latest News</h2>
-    <!-- Add your post content here -->
-</div>
